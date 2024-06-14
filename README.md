@@ -176,3 +176,13 @@
     ```
     Use ${PWD} which is correct for use with PowerShell
 
+## Export container
+
+- Save file system of the container in a compressed file:
+    ```
+    docker export containerId > snapshot.tar
+    ```
+- List the file system of the container:
+    ```
+    docker export containerId | tar -t
+    ```
